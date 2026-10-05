@@ -1653,3 +1653,192 @@ img.omar-modal-image{
     }
 
 }
+
+/* =========================================
+   REGISTRO DE TALLERES
+========================================= */
+
+.workshop-toggle {
+    cursor: pointer;
+}
+
+.workshops-panel {
+    width: 100%;
+    margin-top: 35px;
+
+    padding: 40px;
+
+    background: rgba(255,255,255,.55);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+
+    display: none;
+}
+
+
+/* ENCABEZADO */
+
+.workshops-header {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.workshops-header span {
+    color: #7b102f;
+
+    font-size: .85rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.workshops-header h3 {
+    margin-top: 8px;
+
+    font-size: 28px;
+
+    color: #14342b;
+}
+
+.workshops-header p {
+    margin-top: 8px;
+
+    font-size: 15px;
+
+    color: #555;
+}
+
+
+/* GRID */
+
+.workshops-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+/* TARJETA */
+
+.workshop-card {
+
+    position: relative;
+
+    min-height: 150px;
+
+    padding: 25px 20px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    text-decoration: none;
+
+    color: #14342b;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.08);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+
+.workshop-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 30px rgba(0,0,0,.14);
+
+    background: #fffaf5;
+}
+
+
+/* NUMERO */
+
+.workshop-number {
+
+    position: absolute;
+
+    top: 12px;
+    left: 15px;
+
+    color: #7b102f;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+/* NOMBRE */
+
+.workshop-card h4 {
+
+    margin: 0;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    color: #14342b;
+}
+
+
+/* BOTON / TEXTO DESTACADO */
+
+.workshop-register {
+
+    margin-top: 15px;
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    background: #7b102f;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: .3s ease;
+}
+
+
+.workshop-card:hover .workshop-register {
+
+    background: #a11642;
+
+}
+
+
+.workshop-register i {
+
+    margin-left: 5px;
+
+    font-size: 11px;
+}

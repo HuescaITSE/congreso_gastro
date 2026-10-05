@@ -546,3 +546,73 @@ timelineEntries.forEach(entry => {
     });
 
 });
+
+/* =========================================
+   REGISTRO DE TALLERES
+========================================= */
+
+const workshopToggle =
+    document.querySelector(".workshop-toggle");
+
+const workshopsPanel =
+    document.querySelector(".workshops-panel");
+
+
+if (workshopToggle && workshopsPanel) {
+
+    workshopToggle.addEventListener("click", () => {
+
+        const abierto =
+            workshopsPanel.style.display === "block";
+
+
+        if (abierto) {
+
+            workshopsPanel.style.display = "none";
+
+        } else {
+
+            workshopsPanel.style.display = "block";
+
+            workshopsPanel.scrollIntoView({
+                behavior: "smooth",
+                block: "nearest"
+            });
+
+        }
+
+    });
+
+}
+
+/* =========================================
+   NAVEGACIÓN INTERNA SIN CAMBIAR LA URL
+========================================= */
+
+const scrollLinks =
+    document.querySelectorAll(".scroll-link");
+
+scrollLinks.forEach(link => {
+
+    link.addEventListener("click", (event) => {
+
+        event.preventDefault();
+
+        const targetId =
+            link.dataset.target;
+
+        const target =
+            document.getElementById(targetId);
+
+        if (target) {
+
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        }
+
+    });
+
+});
